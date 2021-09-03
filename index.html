@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kapture Fitness</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style>
+        /* CSS reset */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url("img/gym2.jpg");
+            background-repeat: no-repeat;
+            height: 670px;
+            background-size: 100%;
+            font-family: "Balsamiq Sans", cursive;
+        }
+
+        .left {
+            /* border: 2px solid blue; */
+            /* float: left; */
+            display: inline-block;
+            position: absolute;
+            top: 25px;
+            left: 10px;
+            /* margin: 18px; */
+        }
+
+        .left img {
+            width: 50px;
+            padding: 0px 71px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            text-align: center;
+            font-size: 25px;
+            color: whitesmoke;
+        }
+
+        .center {
+            /* border: 2px solid grey; */
+            clear: both;
+            display: block;
+            width: 48%;
+            margin: 25px auto;
+            padding: 0px 25px 0px 25px;
+
+            /* color: black; */
+            /* display: inline; */
+        }
+
+        .right {
+            /* border: 2px solid greenyellow; */
+            /* float: right; */
+            display: inline-block;
+            position: absolute;
+            top: 25px;
+            right: 10px;
+            /* margin: 18px; */
+        }
+
+        .navbar {
+            display: inline-block;
+            padding: 0px 0px 0px 0px;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: wavy;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            padding: 10px 16px;
+            color: lightseagreen;
+            background-blend-mode: darken;
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: lightyellow;
+            font-weight: bold;
+        }
+
+        .btn {
+            margin: 0px 5px;
+            background-color: transparent;
+            color: black;
+            border-color: grey;
+            border-radius: 4px;
+            border-style: groove;
+            padding: 10px 30px;
+            cursor: pointer;
+            font-family: "Balsamiq Sans", cursive;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            color: whitesmoke;
+            text-decoration: underline;
+        }
+
+        .container {
+            /* border: 2px solid black; */
+            margin: 75px 100px;
+            padding: 10px 50px;
+            border-radius: 11px;
+            width: 45%;
+        }
+
+        .form-group input {
+            display: block;
+            text-align: center;
+            margin: 7px 20px;
+            padding: 5px 25px;
+            border: 2px solid black;
+            font-size: 12px;
+            font-family: "Balsamiq Sans", cursive;
+        }
+
+        .form-group {
+            margin: 4px;
+        }
+
+        #submit {
+            margin: 10px 82px;
+            font-size: 13px;
+        }
+
+        #heading1 {
+            font-size: 25px;
+            color: white;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        /* #number{
+            -webkit-appearance: none;
+        } */
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="https://img.icons8.com/windows/32/000000/gum-.png" />
+            <div>Kapture Fitness</div>
+        </div>
+        <!-- center box for navbar -->
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="learning.html" class="active">Home</a></li>
+                <li><a href="learning.html">About us</a></li>
+                <li><a href="learning.html">Fitness Calculator</a></li>
+                <li><a href="learning.html">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Rate Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1 id="heading1">Join the best gym of Bangalore</h1>
+        <form action="learning.html">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your gender">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your locality">
+            </div>
+            <div class="form-group" id="number">
+                <input type="number" placeholder="Enter your phone no.">
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Enter your email Id">
+            </div>
+            <button class="btn" id="submit">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
