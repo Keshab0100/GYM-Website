@@ -1,0 +1,143 @@
+        /* CSS reset */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url("../img/gym2.jpg");
+            background-repeat: no-repeat;
+            height: 670px;
+            background-size: 100%;
+            font-family: "Balsamiq Sans", cursive;
+        }
+
+        .left {
+            /* border: 2px solid blue; */
+            /* float: left; */
+            display: inline-block;
+            position: absolute;
+            top: 25px;
+            left: 10px;
+            /* margin: 18px; */
+        }
+
+        .left img {
+            width: 50px;
+            padding: 0px 71px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            text-align: center;
+            font-size: 25px;
+            color: whitesmoke;
+        }
+
+        .center {
+            /* border: 2px solid grey; */
+            clear: both;
+            display: block;
+            width: 48%;
+            margin: 25px auto;
+            padding: 0px 25px 0px 25px;
+
+            /* color: black; */
+            /* display: inline; */
+        }
+
+        .right {
+            /* border: 2px solid greenyellow; */
+            /* float: right; */
+            display: inline-block;
+            position: absolute;
+            top: 25px;
+            right: 10px;
+            /* margin: 18px; */
+        }
+
+        .navbar {
+            display: inline-block;
+            padding: 0px 0px 0px 0px;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: wavy;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            padding: 10px 16px;
+            color: lightseagreen;
+            background-blend-mode: darken;
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: lightyellow;
+            font-weight: bold;
+        }
+
+        .btn {
+            margin: 0px 5px;
+            background-color: transparent;
+            color: black;
+            border-color: grey;
+            border-radius: 4px;
+            border-style: groove;
+            padding: 10px 30px;
+            cursor: pointer;
+            font-family: "Balsamiq Sans", cursive;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            color: whitesmoke;
+            text-decoration: underline;
+        }
+
+        .container {
+            /* border: 2px solid black; */
+            margin: 75px 100px;
+            padding: 10px 50px;
+            border-radius: 11px;
+            width: 45%;
+        }
+
+        .form-group input {
+            display: block;
+            text-align: center;
+            margin: 7px 20px;
+            padding: 5px 25px;
+            border: 2px solid black;
+            font-size: 12px;
+            font-family: "Balsamiq Sans", cursive;
+        }
+
+        .form-group {
+            margin: 4px;
+        }
+
+        #submit {
+            margin: 10px 82px;
+            font-size: 13px;
+        }
+
+        #heading1 {
+            font-size: 25px;
+            color: white;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        /* #number{
+            -webkit-appearance: none;
+        } */
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            margin: 0;
+        }
