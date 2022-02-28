@@ -63,6 +63,7 @@
             font-size: 20px;
             font-weight: bold;
             text-decoration: wavy;
+            text-shadow: 1px 1px 2px white;
         }
 
         .navbar li a {
